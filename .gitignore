@@ -1,0 +1,9 @@
+node_modules/
+vendor/
+.vscode/
+*.sketch
+*.xd
+*.fig
+.DS_Store
+*.md
+.prettierignore

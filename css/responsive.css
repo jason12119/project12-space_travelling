@@ -1,0 +1,276 @@
+@media screen and (max-width: 1386px) {
+  #destination-page #destination-nav {
+    margin-top: 12px;
+  }
+  #destination-page .item .value {
+    font-size: 1.9vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #content {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  #content grid-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .perex {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 0.9em;
+    padding-bottom: 40px;
+  }
+  #header {
+    grid-template-columns: 10% 30% 58% 2%;
+    margin-bottom: 16vw;
+  }
+  #header .header {
+    margin-top: 0;
+  }
+  #home-page {
+    background-image: url('../img/home/background-home-tablet.jpg');
+    height: unset;
+  }
+  #home-page h1 {
+    font-size: 14vw;
+  }
+  #home-page .explore {
+    padding-right: 0;
+  }
+  #home-page .text,
+  #home-page .explore {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: unset;
+  }
+  #home-page .text p,
+  #home-page .explore p {
+    max-width: 45vw;
+    text-align: center;
+  }
+  #home-page .text .perex,
+  #home-page .explore .perex {
+    font-size: 1.7vw;
+  }
+  #home-page .circle {
+    margin-bottom: 40px;
+  }
+  #destination-page {
+    background-image: url('../img/destination/background-destination-tablet.jpg');
+    height: unset;
+    text-align: center;
+  }
+  #destination-page #destination-nav {
+    margin-bottom: 40px;
+  }
+  #destination-page .flex {
+    width: 100%;
+    justify-content: space-around;
+  }
+  #destination-page .flex .item {
+    text-align: center;
+  }
+  #destination-page .grid-item {
+    align-items: center;
+  }
+  #destination-page .grid-item p {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 70%;
+  }
+  #destination-page .grid-item .planet {
+    margin-right: unset;
+    align-self: unset;
+    padding-bottom: 20px;
+  }
+  #destination-page .grid-item .perex {
+    padding-bottom: 45px;
+  }
+  #destination-page .flex {
+    margin: auto;
+  }
+  #destination-page #content {
+    align-items: center;
+  }
+  #destination-page .item .value {
+    font-size: 1.3em;
+  }
+  #destination-page #destination-nav {
+    margin-top: 5px;
+    width: 90%;
+    max-width: 600px;
+  }
+  #destination-page #destination-nav li {
+    font-size: 1.2em;
+  }
+  #crew-page {
+    background-image: url('../img/crew/background-crew-tablet.jpg');
+  }
+  #crew-page #content .grid-item.column {
+    align-items: center;
+    z-index: 15;
+  }
+  #crew-page #content .grid-item.column p {
+    text-align: center;
+  }
+  #crew-page #content .portrait {
+    z-index: 10;
+    opacity: 0.5;
+  }
+  #technology-page {
+    background-image: url('../img/technology/background-technology-tablet.jpg');
+    height: unset;
+  }
+  #technology-page .perex {
+    text-align: center;
+    margin-left: 0;
+  }
+  #technology-page #content {
+    padding-top: 40px;
+  }
+  #technology-page #content .grid-item {
+    align-items: center;
+  }
+  #technology-page #content .grid-item h1,
+  #technology-page #content .grid-item h2 {
+    text-align: center;
+  }
+  #technology-page #content .grid-item.image {
+    justify-content: center;
+  }
+  #technology-page #content .grid-item .perex {
+    text-align: center;
+  }
+  #technology-page #content .grid-item:nth-of-type(2) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #technology-page #content .grid-item:nth-of-type(2) p {
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  #technology-page #content .grid-item:nth-of-type(2) .circles {
+    flex-direction: row;
+    padding-right: 0;
+    justify-content: space-between;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1060px) {
+  #header .header {
+    margin-top: 20px;
+  }
+  #header #logo img {
+    align-self: flex-start;
+  }
+  #header .line {
+    width: 0 !important;
+  }
+  #header .line::after {
+    width: 0 !important;
+  }
+  #header .header#nav {
+    background-color: transparent;
+    backdrop-filter: none;
+    padding-left: 0 !important;
+    align-items: flex-end !important;
+    flex-direction: column;
+  }
+  #header .header#nav #admiral {
+    display: flex !important;
+  }
+  #header .header#nav a {
+    display: none;
+  }
+  #header .header#nav a li {
+    padding-bottom: 10px;
+  }
+  #header #nav-tail {
+    background-color: transparent;
+    backdrop-filter: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #technology-page #content .grid-item h1 {
+    font-size: 1.5em;
+  }
+  #technology-page #content .grid-item p {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+  }
+  #technology-page #content .grid-item .circles {
+    width: 80% !important;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 576px) {
+  #home-page {
+    background-image: url('../img/home/background-home-mobile.jpg');
+  }
+  #home-page .text .perex {
+    font-size: 0.6em;
+  }
+  #home-page .text p {
+    max-width: 90%;
+    width: 100%;
+  }
+  #home-page .grid-item .circle {
+    height: 200px;
+    width: 200px;
+  }
+  #home-page .grid-item .circle h2 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  #header {
+    grid-template-columns: 18% 32% 47% 3%;
+  }
+  .perex {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .perex span {
+    color: #5d6075;
+  }
+  #destination-page {
+    background-image: url('../img/destination/background-destination-mobile.jpg');
+  }
+  #destination-page #distance,
+  #destination-page #time {
+    font-size: 1em;
+  }
+  #crew-page {
+    background-image: url('../img/crew/background-crew-mobile.jpg');
+    text-align: center;
+  }
+  #crew-page .overlay-dark {
+    display: block;
+  }
+  #crew-page #content .rank {
+    font-size: 1em;
+  }
+  #crew-page #content h2 {
+    font-size: 1.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #technology-page {
+    background-image: url('../img/technology/background-technology-mobile.jpg');
+  }
+  #technology-page #content .circles .circle {
+    font-size: 1em;
+    width: 50px;
+    height: 50px;
+  }
+  #technology-page #content .image img {
+    width: 100%;
+    height: unset;
+  }
+}

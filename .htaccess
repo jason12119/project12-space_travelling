@@ -1,0 +1,54 @@
+# .htaccess soubor nastavení Apache pro ITnetworkMVC
+
+Options -Indexes
+
+#RewriteEngine On
+# RewriteBase /
+
+# front controller
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule !\.(pdf|js|ico|gif|jpg|png|css|rar|zip|tar\.gz)$ index.php [L]
+
+#RewriteEngine on
+#
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^([^/]+)$ /?p=$1 [L]
+#
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^([^/]+)/([^/]+)$ /?p=$1&sp=$2 [L]
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/administrace/(.*)$
+#RewriteRule ^administrace/.*$ - [PT]
+
+#RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)?$ index.php?p=$1&projectid=$2&sub=$3&type=$4
+#RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)?$ index.php?p=$1&projectid=$2&sub=$3
+
+RewriteRule ^([^/\.]+)/([^/\.]+)/?$ index.php?page=$1&parameter=$2
+RewriteRule ^(.*).html?$ index.php?detail=$1
+
+#RewriteRule ^produkt-(.*)?$ index.php?sub=$1
+
+RewriteRule ^([^/\.]+)/?$ index.php?page=$1
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)([^/])$        /$1$2/ [L,R=301]
+
+#RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ index.php/administrace/admin/index.php
+
+
+#AddType application/x-httpd-php .php .phtml
+
+
+
+
+
+
+
+
+#RewriteRule ⌃(.*)/ $1 [R=301,L]
+#RewriteRule ^(.*)$ index.php?page=$1 [QSA,L]

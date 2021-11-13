@@ -1,0 +1,30 @@
+<h1>Kontaktní formulář</h1>
+
+<p>Kontaktujte nás odesláním formuláře níže.</p>
+
+<form method="post" id="form-email">
+
+    <div>
+        <i class="fa fa-times"></i>
+        <i class="fa fa-check"></i>
+        Vaše emailová adresa<br/>
+        <input class="validation" type="email" name="email"
+               value="<?php if (isset($_POST['email'])) echo(htmlspecialchars($_POST['email'])); ?>"/><br/>
+    </div>
+    <div>
+        Antispam - zadejte aktuální rok<br/>
+        <i class="fa fa-times"></i>
+        <i class="fa fa-check"></i>
+        <input class="validation" type="text" name="rok"/><br/>
+    </div>
+    <div>
+        Zprava <br>
+        <i class="fa fa-times"></i>
+        <i class="fa fa-check"></i>
+        <textarea class="validation"
+                  name="zprava"><?php if (isset($_POST['zprava'])) echo(htmlspecialchars($_POST['zprava'])); ?></textarea><br/>
+    </div>
+    <input class="validation input-ux" type="button" value="Odeslat"/>
+</form>
+
+<?php echo $nazev ?>
