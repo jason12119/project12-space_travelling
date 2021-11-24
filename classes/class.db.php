@@ -5,8 +5,8 @@ class db_connect
     const host = 'localhost';
     const user = 'root';
     const pass = 'root';
-    const db_name = '';
-    var $prefix = '';
+    const db_name = 'podripska';
+    var $prefix = 'podripska_';
 
     function db()
     {
@@ -27,4 +27,5 @@ class db_connect
         return mysqli_real_escape_string($this->db(), $string);
     }
 }
+
 ?>

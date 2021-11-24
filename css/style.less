@@ -285,13 +285,17 @@ p {
 
     .portrait {
       position: absolute;
-      bottom: 0;
+      // bottom: 0;
       right: 16%;
       height: 60vh;
     }
 
     .grid-item {
       display: flex;
+
+      &.image {
+        align-items: flex-end;
+      }
 
       &.column {
         flex-direction: column;

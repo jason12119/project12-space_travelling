@@ -12,7 +12,7 @@
     <meta name="robots" content="index, follow">
     <meta name='author' content='Petr Škvarček'>
     <link rel="icon" type="img/png" sizes="32x32" href="../img/favicon-32x32.png">
-    <base href="http://localhost/"/>
+    <base href="https://www.jason12119.eu/project12/"/>
     <title><?php echo $title; ?></title>
 
     
@@ -33,7 +33,7 @@
 <body id="<?php echo $body; ?>-page">
 <div class="overlay-dark"></div>
 <div id="header">
-<div class="grid-item header"><img id="logo" src="../img/shared/logo.svg" alt=""></div>
+<div class="grid-item header"><img id="logo" src="img/shared/logo.svg" alt=""></div>
 <div class="line grid-item header"></div>
 <ul id="nav" class="grid-item header">
 <div id="admiral">

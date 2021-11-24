@@ -18,5 +18,5 @@
 
 <div id="loader"></div>
 <script src="../dist/js/frameworks-min.js"></script>
-<script src="../js/functions.js"></script>
+<script src="js/functions.js"></script>
 

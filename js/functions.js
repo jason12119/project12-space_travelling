@@ -18,7 +18,7 @@ $(function () {
     console.log(destination)
 
     $.ajax({
-      url: '../data.json',
+      url: 'data.json',
       dataType: 'json',
       success: function (data) {
         var destinationData = data.destinations
@@ -81,7 +81,7 @@ $(function () {
     console.log(crewMember)
 
     $.ajax({
-      url: '../data.json',
+      url: 'data.json',
       dataType: 'json',
       success: function (data) {
         var crewData = data.crew
@@ -143,7 +143,7 @@ $(function () {
     console.log(techID)
 
     $.ajax({
-      url: '../data.json',
+      url: 'data.json',
       dataType: 'json',
       success: function (data) {
         var techData = data.technology

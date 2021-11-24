@@ -30,7 +30,7 @@ class RouterController extends Controller
         $this->data['title'] = $this->controller->header['title'];
         $this->data['keywords'] = $this->controller->header['keywords'];
         $this->data['body'] = $page;
-        $this->data['content'] = $this->controller->data['content'];
+        // $this->data['content'] = $this->controller->data['content'];
         //        $this->data['banners'] = $this->controller->data['banners'];
         $this->view = 'layout';
     }

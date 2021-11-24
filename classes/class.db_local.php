@@ -27,4 +27,5 @@ class db_connect
         return mysqli_real_escape_string($this->db(), $string);
     }
 }
+
 ?>

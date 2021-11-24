@@ -245,12 +245,14 @@ p {
 }
 #crew-page #content .portrait {
   position: absolute;
-  bottom: 0;
   right: 16%;
   height: 60vh;
 }
 #crew-page #content .grid-item {
   display: flex;
+}
+#crew-page #content .grid-item.image {
+  align-items: flex-end;
 }
 #crew-page #content .grid-item.column {
   flex-direction: column;
