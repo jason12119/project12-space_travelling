@@ -33,7 +33,7 @@
 <body id="<?php echo $body; ?>-page">
 <div class="overlay-dark"></div>
 <div id="header">
-<div class="grid-item header"><img id="logo" src="img/shared/logo.svg" alt=""></div>
+<div class="grid-item header"><a href="home"><img id="logo" src="img/shared/logo.svg" alt=""></a></div>
 <div class="line grid-item header"></div>
 <ul id="nav" class="grid-item header">
 <div id="admiral">
